@@ -26,12 +26,17 @@ int calc_cin(int a, int b, int cin){
 
 int soma_binario(int a, int b){
 
-    int i = 0, resta, restb, ai, bi, si, ci, sum = 0;
+    int i = 0, resta, restb, ai, bi, si = 0, ci = 0, sum = 0;
 
     do{
 
-        
+        ai = get_bit(a,i);
+        bi = get_bit(b,i);
 
+        si = calc_si(ai,bi,ci);
+        ci = calc_cin(a,b,ci);
+
+        sum = si * pow(10,i);
 
         i++;
         resta = a/pow(10,i);
