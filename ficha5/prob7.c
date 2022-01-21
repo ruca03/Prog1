@@ -28,6 +28,5 @@ int main(){
         
         printf("pi: %f\n",4*m*1.0/i);
     }   
-    
 
 }
